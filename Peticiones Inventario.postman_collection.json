@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "1efa09a7-8956-4b47-b9f9-d8505884f681",
+		"name": "Peticiones Inventario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1564917"
+	},
+	"item": [
+		{
+			"name": "LISTAR USUARIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREAR USUARIOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Pedro\",\r\n    \"email\": \"pedro@gmail.com\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR USUARIOS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Pedro\",\r\n    \"email\": \"pedro.27@gmail.com\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/usuario/62c779829f3ee857d8ede839",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuario",
+						"62c779829f3ee857d8ede839"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR ESTADO EQUIPO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/estado-equipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"estado-equipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREAR ESTADO EQUIPO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Depreciado\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/estado-equipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"estado-equipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR ESTADO EQUIPO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Depreciado\",\r\n    \"estado\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/estado-equipo/62c775709f3ee857d8ede833",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"estado-equipo",
+						"62c775709f3ee857d8ede833"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR MARCA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREAR MARCA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Xiaomi\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR MARCA",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Xiaomi\",\r\n    \"estado\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/marca/62c839c2ed31d464cf3a9143",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"marca",
+						"62c839c2ed31d464cf3a9143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR TIPO EQUIPO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/tipo-equipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipo-equipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREAR TIPO EQUIPO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Equipos de computo\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tipo-equipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipo-equipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR TIPO EQUIPO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Equipos de computo\",\r\n    \"estado\": \"Inactivo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tipo-equipo/62c7629585f00517f756f999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipo-equipo",
+						"62c7629585f00517f756f999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR INVENTARIO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREAR INVENTARIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\": \"IIITT54\",\r\n    \"modelo\": \"78945\",\r\n    \"descripcion\": \"Pantalla Led 16 Pulgadas\",\r\n    \"foto\": \"https://falabella.scene7.com/is/image/Falabella/15927765_1?wid=1500&hei=1500&qlt=70\",\r\n    \"color\": \"Gris Plata\",\r\n    \"fechaCompra\": \"2022-02-01\",\r\n    \"precio\": 850000,\r\n    \"usuario\": {\r\n        \"_id\": \"62c779829f3ee857d8ede839\"\r\n    },\r\n    \"marca\":  {\r\n        \"_id\": \"62c839c2ed31d464cf3a9143\"\r\n    },\r\n    \"tipoEquipo\":  {\r\n        \"_id\": \"62c7629585f00517f756f999\"\r\n    },\r\n    \"estadoEquipo\":  {\r\n        \"_id\": \"62c775709f3ee857d8ede833\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR INVENTARIO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\": \"IIITT54\",\r\n    \"modelo\": \"885623\",\r\n    \"descripcion\": \"Pantalla Led 16 Pulgadas, reclinable y comoda para su uso\",\r\n    \"foto\": \"https://falabella.scene7.com/is/image/Falabella/15927765_1?wid=1500&hei=1500&qlt=70\",\r\n    \"color\": \"Gris Plata\",\r\n    \"fechaCompra\": \"2022-02-01\",\r\n    \"precio\": 850000,\r\n    \"usuario\": {\r\n        \"_id\": \"62c779829f3ee857d8ede839\"\r\n    },\r\n    \"marca\":  {\r\n        \"_id\": \"62c839c2ed31d464cf3a9143\"\r\n    },\r\n    \"tipoEquipo\":  {\r\n        \"_id\": \"62c7629585f00517f756f999\"\r\n    },\r\n    \"estadoEquipo\":  {\r\n        \"_id\": \"62c775709f3ee857d8ede833\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/inventario/62c84efeed31d464cf3a9149",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"inventario",
+						"62c84efeed31d464cf3a9149"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inventario por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/inventario/62c84efeed31d464cf3a9149",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"inventario",
+						"62c84efeed31d464cf3a9149"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
